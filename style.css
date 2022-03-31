@@ -1,0 +1,179 @@
+:root{
+    --text-color:rgba(255,255,255,0.8);
+    --text-color2:rgba(255,255,255,0.6);
+    --text-color3:rgba(255,255,255,0.4);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: Poppins;
+}
+ul{
+    list-style: none;
+}
+main{
+    min-height: 100vh;
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.glass{
+    background: white;
+    min-height: 90vh;
+    width: 80%;
+    background:rgba(255,255,255,0.2);
+    border-radius: 3rem;
+    backdrop-filter: blur(1rem);
+    z-index: 2;
+    padding: 10px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ==================== Navbar ========================= */
+nav{
+    /* background:yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    flex: 10%;
+    z-index: 99;
+}
+nav .logo{
+    flex: 20%;
+    /* background: pink; */
+}
+nav .logo a{
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+}
+nav .logo a span{
+    font-size: 3rem;
+    color: red;
+    font-weight: 800;
+    font-family:'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav .list{
+    flex: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: green; */
+}
+nav .list li{
+    padding: 5px;
+    margin: 0 5px;
+}
+nav .list li a{
+    color: var(--text-color);
+    font-size: 14px;
+    padding: 5px;
+}
+nav .list li a:hover{
+    border-bottom: 2px solid red;
+    color: white;
+}
+nav .list li a.active{
+    border-bottom: 2px solid red;
+    color: white;
+}
+nav .search i:hover{
+    /* background: purple; */
+    color: white;
+}
+nav .search i{
+    color: var(--text-color);
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+/* ========================= main ======================= */
+.content{
+    flex: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .main-content{
+    flex: 40%;
+}
+.content .main-content p{
+    color: var(--text-color2);
+    font-size: 12px;
+    letter-spacing: 1.2px;
+}
+
+.content .main-content .text-item{
+    width: 100%;
+    height: 100%;
+    border-left: 3px solid red;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+.content .main-content .text-item h2{
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.content .main-content .info{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.content .main-content .info .info-item h4{
+    color: var(--text-color3);
+    font-size: 14px;
+}
+.content .main-content .info .info-item i{
+    margin-top: 5px;
+    color: white;
+    font-size: 15px;
+}
+.content .main-content .watch{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.content .main-content .watch h3{
+    color: white;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.content .main-content .watch iframe{
+    border-radius: 20px;
+}
+.content .main-content a{
+
+    padding: 10px 30px;
+    background: rgb(17, 15, 15);
+    border-radius: 20px;
+    color: white;
+    transition: 0.5s;
+}
+.content .main-content a:hover{
+    background: var(--text-color3);
+    color: red;
+}
+.content .main-img{
+    flex: 50%;
+    display: flex;
+    background: chartreuse;
+    position: relative;
+} 
+.content .main-img img{
+    position: absolute;
+    top: -250px;
+    width: 600px;
+}
