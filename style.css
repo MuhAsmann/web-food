@@ -88,9 +88,12 @@ nav .list li a.active{
     border-bottom: 4px solid red;
     color: white;
 }
+nav .search i{
+    transition: 0.5s;
+}
 nav .search i:hover{
     /* background: purple; */
-    color: white;
+    color: red;
 }
 nav .search i{
     color: var(--text-color);
