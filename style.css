@@ -81,11 +81,11 @@ nav .list li a{
     padding: 5px;
 }
 nav .list li a:hover{
-    border-bottom: 2px solid red;
+    border-bottom: 4px solid red;
     color: white;
 }
 nav .list li a.active{
-    border-bottom: 2px solid red;
+    border-bottom: 4px solid red;
     color: white;
 }
 nav .search i:hover{
