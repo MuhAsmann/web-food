@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <main>
         <section class="glass">
-           <nav>
+           <nav data-aos="fade-down" data-aos-duration="1500">
                <div class="logo">
                     <a href="#"><span>T</span>aste</a>
                </div>
@@ -32,7 +33,7 @@
                <div class="main-content">
                     <p>for healty lifestyle</p>
                     <div class="text-item">
-                        <h2>Pizza Salad Nyam<br>With Black Beans <br> And Veggies</h2>
+                        <h2 data-aos="fade-right" data-aos-duration="1500">Pizza Salad Nyam<br>With Black Beans <br> And Veggies</h2>
                     </div>
                     <div class="info">
                         <div class="info-item">
@@ -54,7 +55,7 @@
                     </div>
                     <a href="#">Learn More</a>
                </div>
-               <div class="main-img">
+               <div class="main-img" data-aos="fade-left" data-aos-duration="1500">
                     <img src="img/pexels-pixabay-208537-removebg-preview.png" alt="">
                </div>
            </div>
@@ -63,5 +64,9 @@
            </div> 
         </section>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
